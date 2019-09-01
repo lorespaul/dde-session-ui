@@ -357,7 +357,7 @@ int BubbleManager::getY()
     if (m_dockPosition == DockPosition::Top)
         return m_dockGeometry.bottom();
 
-    return rect.y();
+    return rect.y() + 26;
 }
 
 QPair<QRect, bool> BubbleManager::screensInfo(const QPoint &point) const
